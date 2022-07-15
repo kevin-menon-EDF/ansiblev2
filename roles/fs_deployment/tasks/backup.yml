@@ -2,7 +2,7 @@
 - name: Backup Client
   commvault.ansible.file_servers.backup:
     client: "{{ item }}"
-    backupset: "{{ backuptset }}"
+    backupset: "{{ backupset }}"
     subclient: "{{ subclient }}"
   loop: "{{ client_computers }}"
   
